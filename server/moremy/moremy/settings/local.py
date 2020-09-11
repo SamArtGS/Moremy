@@ -5,8 +5,12 @@ from .base import *
 
 DATABASES = {
   "default": {
-    "ENGINE": "django.db.backends.sqlite3",
-    "NAME": BASE_DIR.child("db.sqlite3"),
+    "ENGINE": "django.db.backends.mysql",
+    "NAME": get_secret("DB_NAME"),  # Nombre de la base de datos
+    "USER": get_secret("USER"),
+    "PASSWORD": get_secret("PASSWORD"),
+    "HOST": "moremydb.c7rbflvluzyk.us-east-2.rds.amazonaws.com",
+    "PORT": "3306",  # Puerto por defecto de MySQL
   }
 }
 
