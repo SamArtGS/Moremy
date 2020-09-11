@@ -1,0 +1,2 @@
+rootProject.name='Moremy'
+include ':app'
