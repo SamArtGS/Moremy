@@ -18,7 +18,6 @@ class UserSerializer(serializers.Serializer):
 
   def validate_username(self, data):
     user = User.objects.filter(username=data)
-    print(user)
     if user.count() != 0:
       raise serializers.ValidationError("El nombre de Usuario ya existe")
     return data
