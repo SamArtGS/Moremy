@@ -1,5 +1,5 @@
 <p>
-  <img src="docs/img/logo.jpeg" align = "right"  width="80" style='border-radius: 25%;'/>
+  <img src="img/logo.jpeg" align = "right"  width="80" style='border-radius: 25%;'/>
 </p>
 
 
