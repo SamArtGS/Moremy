@@ -1,5 +1,4 @@
 appdirs==1.4.4
-black==20.8b2.dev13+g5ad6f67
 click==7.1.2
 Django==2.1.1
 djangorestframework==3.11.1
