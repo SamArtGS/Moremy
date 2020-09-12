@@ -6,7 +6,7 @@ Moremy es un proyecto que está tratando de tomar en cuenta a la población que 
 
 Los cursos se clasifican por área, siendo las áreas a tomar en cuenta, por ahora, plomería, carpintería, electricidad y albaniñería, cada una tiene el nombre, una pequeña descripción, número de módulos que contiene, etc.
 
-Los módulos contienen el nombre del módulo, una breve descripción, un stutus de progreso (No iniciado, en curso, terminado), el nivel de dificultad,  requerimientos de material, fecha de última actualización, número de estudiantes inscritos, nombre de los instructores, la duración del módulo.
+Los módulos contienen el nombre del módulo, una breve descripción, un stutus de progreso (No iniciado, en curso, terminado), el nivel de dificultad,  requerimientos de material, fecha de última actualización, número de estudiantes inscritos, nombre de los instructores, la duración del módulo en horas.
 
 Como parte de una ventaja y distingo competitivo ponemos a la disposición de los usuarios, en cada módulo un rango de precios estimados que costarían sus servicios dada su ubicación geográfica en la república y en base a los módulos que ha terminado exitosamente. 
 
