@@ -5,7 +5,7 @@
 
 # Moremy 🛠
 
-## Problemática
+### Problemática
 
 Vivimos en medio de lo que es potencialmente una de las mayores amenazas en nuestra vida para la educación global, una gigantesca crisis educativa. Al 28 de marzo de 2020, la pandemia COVID-19 está causando que más de 1,600 millones de niños y jóvenes no asistan a la escuela en 161 países. Esto es cerca del 80% de los estudiantes inscritos en el mundo.  Ya estábamos experimentando una crisis de ámbito global, ya que muchos estudiantes estaban en la escuela, pero no estaban aprendiendo las habilidades fundamentales necesarias para la vida. 
 
