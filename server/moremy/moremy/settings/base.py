@@ -23,11 +23,11 @@ def get_secret(secret_name, secret=secret):
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_secret("SECRET_KEY")
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -61,7 +61,7 @@ ROOT_URLCONF = "moremy.urls"
 TEMPLATES = [
   {
     "BACKEND": "django.template.backends.django.DjangoTemplates",
-    "DIRS": [BASE_DIR.child("templates")],
+    "DIRS": [],
     "APP_DIRS": True,
     "OPTIONS": {
       "context_processors": [
@@ -76,8 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "moremy.wsgi.application"
 
+
 # Password validation
-# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
   {
@@ -94,10 +95,11 @@ AUTH_PASSWORD_VALIDATORS = [
   },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = "es-mx"
+# Internationalization
+# https://docs.djangoproject.com/en/2.1/topics/i18n/
+
+LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
 
