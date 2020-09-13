@@ -2,8 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/Reportar"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Reportar Error"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/CalificarCurso"
+        android:orderInCategory="100"
+        android:title="Calificar Curso"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/notificaciones"
+        android:orderInCategory="100"
+        android:title="Notificaciones"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacidad"
+        android:orderInCategory="100"
+        android:title="Política de Privacidad"
+        app:showAsAction="never" />
+
 </menu>

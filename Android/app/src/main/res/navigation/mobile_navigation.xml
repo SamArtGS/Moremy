@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.samjor.moremy.ui.buscar.BuscarFragment"
-        android:label="@string/destacado"
+        android:label="Se modificará el string?"
         tools:layout="@layout/fragment_busqueda">
 
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
+            android:id="@+id/sss"
+            app:destination="@id/fragment_busqueda" />
 
     </fragment>
     <fragment
-        android:id="@+id/nav_home_second"
+        android:id="@+id/fragment_busqueda"
         android:name="com.samjor.moremy.ui."
         android:label="@string/home_second"
-        tools:layout="@layout/perfil">
+        tools:layout="@layout/fragment_busqueda">
         <action
             android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
             app:destination="@id/nav_home" />
@@ -28,20 +28,14 @@
         <argument
             android:name="myArg"
             app:argType="string" />
-        <action
-            android:id="@+id/action_nav_home_second_self"
-            app:destination="@id/nav_home_second" />
+
     </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.samjor.moremy.ui.destacado.DestacadoFragment"
         android:label="@string/perfil"
-        tools:layout="@layout/fragment_destacado" >
-        <action
-            android:id="@+id/action_nav_gallery_to_nav_home"
-            app:destination="@id/nav_home" />
-    </fragment>
+        tools:layout="@layout/fragment_destacado" />
 
     <fragment
         android:id="@+id/nav_slideshow"
