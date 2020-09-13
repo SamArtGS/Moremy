@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:hint="Buscar por CLUES"
+                android:hint="Buscar por área"
                 android:padding="10dp"
                 android:importantForAutofill="no"
                 android:drawableRight="@android:drawable/ic_menu_search"
@@ -34,10 +34,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="120dp"
-                android:src="@mipmap/ic_launcher"
-                android:layout_height="120dp"/>
+                android:layout_height="120dp"
+                android:src="@drawable/carpentl" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,16 +48,17 @@
                 <TextView
                     android:id="@+id/noticia1"
                     android:textStyle="bold"
+                    android:textSize="16dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="ATENCIÓN ASISTENTES" />
+                    android:text="CARPINTERÍA" />
                 <TextView
                     android:id="@+id/noticia1extra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="Debido" />
+                    android:text="En este curso aprenderás todo lo necesario para convertirte a un gran carpintero." />
 
             </LinearLayout>
 
@@ -74,7 +77,7 @@
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="120dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@drawable/plumbl"
                         android:layout_height="120dp"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -82,18 +85,19 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/noticia1"
+                            android:id="@+id/noticia2"
                             android:textStyle="bold"
+                            android:textSize="16dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="ATENCIÓN ASISTENTES" />
+                            android:text="PLOMERÍA" />
                         <TextView
-                            android:id="@+id/noticia1extra"
+                            android:id="@+id/noticia2extra"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="Debido" />
+                            android:text="Si quieres dedicarte a crear y reparar canales de agua, es tu opción, muchas personas necesitan de esste servicio" />
 
                     </LinearLayout>
 
@@ -112,7 +116,7 @@
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="120dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@drawable/construcl"
                         android:layout_height="120dp"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -120,18 +124,19 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/noticia1"
+                            android:id="@+id/noticia3"
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="ATENCIÓN ASISTENTES" />
+                            android:textSize="16dp"
+                            android:text="CONSTRUCCIÓN" />
                         <TextView
-                            android:id="@+id/noticia1extra"
+                            android:id="@+id/noticia3extra"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="Debido" />
+                            android:text="La construcción siempre ha sido un elemento clave en una sociedad. Aprende qué debes hacer en una obra" />
 
                     </LinearLayout>
 
@@ -150,7 +155,7 @@
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="120dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@drawable/electrl"
                         android:layout_height="120dp"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -158,18 +163,58 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/noticia1"
+                            android:id="@+id/noticia4"
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="ATENCIÓN ASISTENTES" />
+                            android:textSize="16dp"
+                            android:text="ELECTRICIDAD" />
                         <TextView
-                            android:id="@+id/noticia1extra"
+                            android:id="@+id/noticia4extra"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="Debido" />
+                            android:text="Todos necesitamos a un electricista en muchas partes, construcción hasta instalar un aparato en nuestras casas" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:src="@drawable/gardnl"
+                        android:layout_height="120dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/noticia5"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="16dp"
+                            android:text="JARDINERÍA" />
+                        <TextView
+                            android:id="@+id/noticia5extra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Los jardines son hermosos pero requieren su mantenimiento, es hora de que aprendas a hacerlo" />
 
                     </LinearLayout>
 

@@ -3,43 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/destacado">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/destacado"
         android:name="com.samjor.moremy.ui.buscar.BuscarFragment"
-        android:label="Se modificará el string?"
-        tools:layout="@layout/fragment_busqueda">
+        android:label="Destacados"
+        tools:layout="@layout/fragment_destacado">
 
         <action
-            android:id="@+id/sss"
-            app:destination="@id/fragment_busqueda" />
-
+            android:id="@+id/action_destacado_to_busqueda"
+            app:destination="@id/busqueda" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_busqueda"
+        android:id="@+id/busqueda"
         android:name="com.samjor.moremy.ui."
-        android:label="@string/home_second"
+        android:label="Búsqueda"
         tools:layout="@layout/fragment_busqueda">
-        <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
-
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/cursos"
         android:name="com.samjor.moremy.ui.destacado.DestacadoFragment"
-        android:label="@string/perfil"
-        tools:layout="@layout/fragment_destacado" />
+        android:label="Mis cursos"
+        tools:layout="@layout/fragment_cursos" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/configuracion"
         android:name="com.samjor.moremy.ui.curso.CursoFragment"
-        android:label="@string/perfil"
-        tools:layout="@layout/fragment_cursos" />
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" />
 </navigation>

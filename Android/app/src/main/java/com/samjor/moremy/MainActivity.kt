@@ -2,6 +2,8 @@ package com.samjor.moremy
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -14,7 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener  {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
+                R.id.destacado, R.id.busqueda, R.id.cursos,R.id.configuracion), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
@@ -50,6 +52,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
         menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        Toast.makeText(this, "SE tocó algo chingada madre", Toast.LENGTH_SHORT).show()
+        when (item.itemId) {
+            R.id.destacado -> Toast.makeText(this, "Clicó destacado", Toast.LENGTH_SHORT).show()
+            R.id.busqueda -> Toast.makeText(this, "Clicó búsqueda", Toast.LENGTH_SHORT).show()
+            R.id.cursos -> Toast.makeText(this, "Clicó cursos", Toast.LENGTH_SHORT).show()
+            R.id.configuracion -> Toast.makeText(this, "Clicked item four", Toast.LENGTH_SHORT).show()
+        }
         return true
     }
 
