@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.samjor.moremy.ui.buscar.BuscarFragment"
+        android:label="@string/destacado"
+        tools:layout="@layout/fragment_busqueda">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.samjor.moremy.ui."
+        android:label="@string/home_second"
+        tools:layout="@layout/perfil">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_home_second_self"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.samjor.moremy.ui.destacado.DestacadoFragment"
+        android:label="@string/perfil"
+        tools:layout="@layout/fragment_destacado" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.samjor.moremy.ui.curso.CursoFragment"
+        android:label="@string/perfil"
+        tools:layout="@layout/fragment_cursos" />
+</navigation>

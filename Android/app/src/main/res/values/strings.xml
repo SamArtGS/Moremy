@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">Moremy</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="app_name">MOREMY</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MOREMY</string>
+    <string name="nav_header_subtitle">correo electrónico</string>
+    <string name="nav_header_desc">MOREMY</string>
+
+
+
+    <string name="action_settings">Dependiendo</string>
+
+    <string name="destacado">Destacado</string>
+    <string name="busqueda">Búsqueda</string>
+    <string name="cursos">Cursos</string>
+    <string name="perfil">Perfil</string>
+
+
+    <string name="home_second">Home Second</string>
+
 </resources>
